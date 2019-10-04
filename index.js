@@ -20,10 +20,10 @@ function addItems() {
 
 function checkItems() {
   $('.shopping-list').on('click', '.shopping-item-toggle',function() {
-    const itemToToggle = $(event.target).parent().parent().find('.shopping-item');
+    const itemToToggle = $(this).closest('li').find('.shopping-item');
     itemToToggle.toggleClass('shopping-item__checked');
-    console.log(itemToToggle);
-    console.log('beep');
+    // console.log(itemToToggle);
+    // console.log('beep');
   });
 
 }
